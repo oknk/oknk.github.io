@@ -1,1 +1,48 @@
-Hello World!
+<!DOCTYPE html>
+<head>
+
+<style>
+
+@keyframes colorchange {
+  0%   { background: #ff0000; }
+  10%  { background: #ff9900; }
+  20%  { background: #ccff00; }
+  30%  { background: #33ff00; }
+  40%  { background: #00ff66; }
+  50%  { background: #00ffff; }
+  60%  { background: #0066ff; }
+  70%  { background: #3300ff; }
+  80%  { background: #cc00ff; }
+  90%  { background: #ff0099; }
+  100% { background: #ff0000; }
+}
+
+@keyframes animatedBackground {
+  from { background-position: 0 0; }
+  to { background-position: 636px -526px; }
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin:0;
+  animation: colorchange 30s linear infinite;
+}
+
+#logoanim {
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  top:0;
+  left:0;
+  background-image: url(okpatt_master.png);
+  background-position: 0px 0px;
+  animation: animatedBackground 30s linear infinite;
+}
+
+</style>
+
+</head>
+<body>
+<div id="logoanim"></div>
+</body>
