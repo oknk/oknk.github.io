@@ -1,2 +1,1 @@
-# okaynokay.xyz
-okaynokay.xyz website
+# oknk website
